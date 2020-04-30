@@ -19,7 +19,7 @@ UnitTypeToStringMap UnitTypesStrings = {
 ArmyUnit::ArmyUnit(UnitType type) : _type(type) {}
 
 
-UnitType ArmyUnit::getType(UnitType type) {
+UnitType ArmyUnit::getType() {
     return _type;
 }
 

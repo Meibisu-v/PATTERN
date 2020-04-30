@@ -23,6 +23,11 @@ set(INCLUDE
 		${PROJECT_SOURCE_DIR}/include/DeadSoul.h
 		${PROJECT_SOURCE_DIR}/include/Mechanisme.h
 		${PROJECT_SOURCE_DIR}/include/ManKing.h
+		${PROJECT_SOURCE_DIR}/include/Army.h
+		${PROJECT_SOURCE_DIR}/include/ArmyBuilder.h
+		${PROJECT_SOURCE_DIR}/include/ArmyFactory.h
+		${PROJECT_SOURCE_DIR}/include/Side.h
+		${PROJECT_SOURCE_DIR}/include/User.h
     )
 
 set(SOURCE
@@ -40,6 +45,10 @@ set(SOURCE
 		${PROJECT_SOURCE_DIR}/src/DeadSoul.cpp
 		${PROJECT_SOURCE_DIR}/src/Mechanisme.cpp
 		${PROJECT_SOURCE_DIR}/src/ManKing.cpp
+		${PROJECT_SOURCE_DIR}/src/Army.cpp
+		${PROJECT_SOURCE_DIR}/src/ArmyBuilder.cpp
+		${PROJECT_SOURCE_DIR}/src/ArmyFactory.cpp
+		${PROJECT_SOURCE_DIR}/src/User.cpp
         ${PROJECT_SOURCE_DIR}/run.cpp
     )
 include_directories(${PROJECT_SOURCE_DIR})
@@ -62,6 +71,10 @@ add_executable(test_
 	${PROJECT_SOURCE_DIR}/src/DeadSoul.cpp
 	${PROJECT_SOURCE_DIR}/src/Mechanisme.cpp
 	${PROJECT_SOURCE_DIR}/src/ManKing.cpp
+	${PROJECT_SOURCE_DIR}/src/Army.cpp
+	${PROJECT_SOURCE_DIR}/src/ArmyBuilder.cpp
+	${PROJECT_SOURCE_DIR}/src/ArmyFactory.cpp
+	${PROJECT_SOURCE_DIR}/src/User.cpp
 	)
 
 target_link_libraries(proj ${INCLUDE})
