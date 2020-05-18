@@ -28,6 +28,7 @@ set(INCLUDE
 		${PROJECT_SOURCE_DIR}/include/ArmyFactory.h
 		${PROJECT_SOURCE_DIR}/include/Side.h
 		${PROJECT_SOURCE_DIR}/include/User.h
+		${PROJECT_SOURCE_DIR}/include/Game.h
     )
 
 set(SOURCE
@@ -49,7 +50,8 @@ set(SOURCE
 		${PROJECT_SOURCE_DIR}/src/ArmyBuilder.cpp
 		${PROJECT_SOURCE_DIR}/src/ArmyFactory.cpp
 		${PROJECT_SOURCE_DIR}/src/User.cpp
-        ${PROJECT_SOURCE_DIR}/run.cpp
+		${PROJECT_SOURCE_DIR}/src/Game.cpp
+        ${PROJECT_SOURCE_DIR}/src/run.cpp
     )
 include_directories(${PROJECT_SOURCE_DIR})
 add_executable(proj ${SOURCE} ${INCLUDE})

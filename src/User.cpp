@@ -33,24 +33,21 @@ int User::turnWhite(ArmyType ty, int round, int rn, std::string type){
     if (rn == round && type == str){
         return 0;
     }
-    else{
-        if (str == "Mankind army"){
-            return 11580;
-        }
-
-        if (str == "Elves Army"){
-            return 12000;
-        }
-
-        if (str == "Dwarfs Army"){
-            return 8500;
-        }
-
-        if (str == "Dead Soul Pirates Army"){
-            return std::numeric_limits<int>::max();
-        }
+    if (str == "Mankind army"){
+        return 11580;
     }
 
+    if (str == "Elves Army"){
+        return 12000;
+    }
+
+    if (str == "Dwarfs Army"){
+        return 8500;
+    }
+
+    if (str == "Dead Soul Pirates Army"){
+        return std::numeric_limits<int>::max();
+    }
 }
 
 int User::turnDark(ArmyType ty, int round, int rn, std::string type){
