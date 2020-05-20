@@ -29,7 +29,7 @@ class ArmyUnit {
 public:
     ArmyUnit(UnitType type);
 
-    virtual UnitType getType(UnitType);
+    virtual UnitType getType();
 
     virtual const char* name() const final;
     virtual void info() = 0;
